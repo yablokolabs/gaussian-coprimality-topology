@@ -1,0 +1,10 @@
+/target/
+**/target/
+/.worktrees/
+/paper/
+.env
+.env.*
+*.pem
+*.key
+*.log
+.DS_Store

@@ -1,0 +1,16 @@
+[package]
+name = "gip-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+description = "Command-line finite experiments for the Gaussian coprimality topology"
+
+[dependencies]
+gaussian_integers = { package = "gaussian-integers", version = "0.1.0", path = "../gaussian_integers" }
+
+[lints]
+workspace = true

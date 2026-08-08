@@ -1,0 +1,19 @@
+[workspace]
+members = ["gaussian_integers", "gip_cli"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT"
+repository = "https://github.com/yablokolabs/gaussian-coprimality-topology"
+homepage = "https://github.com/yablokolabs/gaussian-coprimality-topology"
+readme = "README.md"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+pedantic = "warn"
