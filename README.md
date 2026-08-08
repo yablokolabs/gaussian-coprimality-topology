@@ -213,8 +213,9 @@ classes:
   `sqrt(N(z))`. A conservative trial-division bound is `O(N(z)^(3/4))` small-integer
   remainder operations; this favors auditability over large-input performance.
 - `window` accepts `0 <= R <= 100` and visits exactly `(2R+1)^2 - 1` nonzero points.
-  With `--classes`, it factors every point, so runtime grows with both the number of points
-  and their norms.
+  It factors every point in both output modes to count distinct quotient supports, so runtime
+  grows with both the number of points and their norms. `--classes` only prints the
+  support-frequency table that the command has already accumulated.
 
 Zero is valid for algebraic gcd and coprimality, but it is rejected by support and topology
 APIs because the paper's space excludes zero.
