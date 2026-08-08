@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Install declared minimum Rust version
         uses: dtolnay/rust-toolchain@1.85.0
       - name: Check declared minimum Rust version
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Install stable Rust
         run: |
           rustup toolchain install stable --profile minimal
